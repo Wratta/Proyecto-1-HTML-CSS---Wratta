@@ -19,14 +19,39 @@ body {
     color: var(--color-texto);
     font-family: var(--fuente-cuerpo);
     line-height: 1.6;
+    padding-top: 150px;
 }
 
 /* Header y Navegación */
 header {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('img/textura-piedra.png');
-    padding: 2rem 0;
-    text-align: center;
+    background-color: #1a1a1a;
+    background-image: url('img/textura-piedra.png');
+    background-repeat: repeat;
+    background-position: center center, top left;
+    padding: 1rem 5%; 
     border-bottom: 3px solid var(--color-oro);
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.header-main-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -37,12 +62,8 @@ header h1 {
 
 nav ul {
     list-style: none;
-    margin-top: 1rem;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex; /* Menú horizontal */
+    gap: 20px; /* Espacio entre enlaces */
 }
 
 nav ul li a {
@@ -50,11 +71,39 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 0.9rem;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
     color: var(--color-oro);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.thrain-logo-img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 6px; 
+    border: 2px solid var(--color-hierro); 
+    object-fit: cover; 
+}
+
+.title-text h1 {
+    font-family: var(--fuente-titulo);
+    color: var(--color-oro);
+    font-size: 1.8rem; 
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-top: 2px;
 }
 
 /* Hero Section */
