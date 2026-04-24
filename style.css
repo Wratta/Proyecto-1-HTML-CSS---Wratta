@@ -147,6 +147,8 @@ nav ul li a:hover {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -155,14 +157,25 @@ nav ul li a:hover {
 }
 
 .card-img {
-    height: 200px;
-    background-size: cover;
-    background-position: top;
+    height: 250px; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     border-bottom: 2px solid var(--color-oro);
+    transition: background-size 0.5s ease;
+}
+
+.card:hover .card-img {
+    background-size: 110%; 
 }
 
 .card-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    min-height: 100px;
 }
 
 .card-info h3 {
@@ -188,6 +201,8 @@ nav ul li a:hover {
     font-weight: bold;
     color: var(--color-oro);
     text-align: right;
+    margin-top: auto;
+    padding-top: 1rem;
 }
 
 .price span {
