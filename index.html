@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#catalogo">Catálogo de Armas</a></li>
-                    <li><a href="#contacto">Encargos</a></li>
+                    <li><a href="#encargos">Encargos</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,7 +32,7 @@
     <section id="hero">
         <div class="hero-overlay">
             <h2>Acero Templado en el Corazón de la Montaña</h2>
-            <p>Más de 200 años forjando el destino de Pathfinder con martillo y runas.</p>
+            <p>Más de 200 años forjando el destino de Goralion con martillo, sudor y runas.</p>
         </div>
     </section>
 
@@ -234,7 +234,37 @@
             </article>
             </div>
     </main>
+    <section id="encargos">
+    <div class="form-container">
+        <h2 class="section-title">Formular un Encargo</h2>
+        <p class="form-intro">¿Buscas un acero que no se quiebre ante el aliento de un dragón? Envía tus especificaciones y Thrain encenderá la forja.</p>
+        
+        <form action="#">
+            <div class="form-group">
+                <label for="nombre">Nombre del Guerrero/Clan</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Ragni Barba de Hierro" required>
+            </div>
 
+            <div class="form-group">
+                <label for="tipo">Tipo de Trabajo</label>
+                <select id="tipo" name="tipo">
+                    <option value="arma">Daga del clan Personalizada</option>
+                    <option value="arma">Arma Personalizada</option>
+                    <option value="armadura">Armadura a Medida</option>
+                    <option value="runas">Grabado de Runas</option>
+                    <option value="reparacion">Reparación de Reliquia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Detalles del Acero y Runas</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describe el peso, balance y propósito del arma o armadura..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-forja">Enviar a la Forja</button>
+        </form>
+    </div>
+</section>
     <footer id="contacto">
         <p>&copy; 2024 Forja de Pico de Hierro - Thrain Martillo-Sordo</p>
         <p>Bajo las leyes de las Montañas de los Cinco Reyes</p>
