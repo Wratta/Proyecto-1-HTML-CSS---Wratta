@@ -16,3 +16,4 @@ Usa Google Fonts para darle personalidad.
 Defino una paleta de 3 colores: uno dominante, uno secundario y uno de hover para los botones.
 
 
+"El diseño busca evocar la solidez de la piedra enana mediante el uso de texturas repetitivas y una paleta de colores basada en el hierro y el oro fundido, utilizando CSS Flexbox y Grid para asegurar que la tienda sea accesible desde cualquier dispositivo, ya sea una pantalla moderna o un visor rúnico antiguo."
